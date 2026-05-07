@@ -1,5 +1,21 @@
 const http = require("http");
+const password = "admin123";
 
+function getUser(userInput) {
+  const query = "SELECT * FROM users WHERE id = " + userInput;
+  console.log(query);
+
+  const temp = 123;
+
+  try {
+    riskyFunction();
+  } catch (e) {}
+
+  return query;
+}
+
+function add(a,b){ return a+b; }
+function add2(a,b){ return a+b; }
 const server = http.createServer((req, res) => {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.end(`
