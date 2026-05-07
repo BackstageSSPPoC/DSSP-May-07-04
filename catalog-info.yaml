@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: DSSP-May-07-04
+  description: Service DSSP-May-07-04
+
+  annotations:
+    github.com/project-slug: BackstageSSPPoC/DSSP-May-07-04
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-May-07-04/main
+    argocd/app-name: dssp-may-07-04
+    backstage.io/kubernetes-id: DSSP-May-07-04
+    backstage.io/kubernetes-namespace: default
+    sonarqube.org/project-key: dssp-may-07-04
+
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
